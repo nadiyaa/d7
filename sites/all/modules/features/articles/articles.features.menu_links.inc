@@ -10,17 +10,17 @@
 function articles_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: navigation_article:node/add/article
-  $menu_links['navigation_article:node/add/article'] = array(
+  // Exported menu link: navigation_post:node/add/article
+  $menu_links['navigation_post:node/add/article'] = array(
     'menu_name' => 'navigation',
     'link_path' => 'node/add/article',
     'router_path' => 'node/add/article',
-    'link_title' => 'Article',
+    'link_title' => 'Post',
     'options' => array(
       'attributes' => array(
         'title' => 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.',
       ),
-      'identifier' => 'navigation_article:node/add/article',
+      'identifier' => 'navigation_post:node/add/article',
     ),
     'module' => 'system',
     'hidden' => 0,
@@ -33,7 +33,7 @@ function articles_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Article');
+  t('Post');
 
 
   return $menu_links;
